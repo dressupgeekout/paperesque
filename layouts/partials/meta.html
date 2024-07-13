@@ -20,7 +20,4 @@
 {{ end }}{{else if isset .Params "tags" }}{{ range.Params.tags }}{{ . }},
 {{ end }}{{ end }}">
 
-{{ template "_internal/opengraph.html" . }}
-<meta property="og:site_name" content="{{ .Site.Title }}" />
-
 {{ template "_internal/schema.html" . }}
