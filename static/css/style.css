@@ -310,14 +310,6 @@ figure figcaption :last-child {
   margin: 0 0 12px;
 }
 
-twitter-widget {
-  /*
-  Have to use important here because the twitter oembed puts the styles in the
-  style attribute.
-  */
-  margin: 2em auto !important;
-}
-
 .list-unstyled {
   padding-left: 0;
   margin-bottom: 0;
