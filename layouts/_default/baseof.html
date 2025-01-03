@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html
-  lang="{{ .Site.LanguageCode }}"
-  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
->
-  <head>
-    <meta charset="utf-8" />
+<!doctype html>
 
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
     {{ partial "meta.html" . }}
 
     <title>{{ .Title }}{{ if not .IsHome }} || {{ $.Site.Title }}{{ end }}</title>
@@ -24,8 +20,8 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
   <body
-  class="{{ block "body-classes" . }}{{ end }}"
-  lang="{{ .Site.LanguageCode }}">
+    class="{{ block "body-classes" . }}{{ end }}"
+    lang="{{ .Site.LanguageCode }}">
   <div class="navbar nav-bkg drop-shadow">
     <nav class="content-container pagewide-bar-padding">
       <span class="divider">/ </span>
