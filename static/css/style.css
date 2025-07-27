@@ -8,10 +8,6 @@ code {
   padding: 2px 4px;
   font-size: 90%;
   background-color: #eeeeee;
-  hyphens: none;
-  /* reset changes from <p> */
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
   word-wrap: break-word;
   /* border-radius: 4px; */
 }
@@ -406,12 +402,6 @@ ul.right-links li {
 .embed.rich,
 img {
   max-width: 100%;
-}
-
-p {
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
 }
 
 .look-sheet-bkg.draft,
