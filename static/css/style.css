@@ -66,54 +66,6 @@ body {
   align-items: center;
 }
 
-.look-sheet-bkg {
-  background-color: white;
-}
-
-@media(min-width: 720px) {
-
-  /* Make everything 10% smaller! */
-  html {
-    font-size: 14.4px;
-  }
-
-  .content-container {
-    /* ACHTUNG:
-    Images are scaled in the fitfigure shortcode with an assumption that the
-    page is 652px wide. If you change this value, remeasure and change the value
-    there too. */
-    width: 45rem;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin: 0 auto;
-  }
-
-  .content-container-narrow-pad {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    width: 45rem;
-    margin: 0 auto;
-  }
-
-  .bottom-links {
-    border: 1px solid #ccc;
-    border-bottom: 0px;
-  }
-
-  .look-sheet {
-    border: 1px solid #ccc;
-    box-shadow: 0 5px 5px -5px #777777;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    min-height: 0px;
-    background-color: white;
-  }
-
-  .look-sheet-bkg {
-    background-color: #fffdf7;
-  }
-}
-
 figure.smaller {
   max-width: 67%;
 }
@@ -124,6 +76,10 @@ figure.smaller {
   margin-top: 1em;
   margin-bottom: 1em;
   min-height: 0px;
+}
+
+article {
+  background-color: #fff;
 }
 
 .article-pad-v {
@@ -142,7 +98,7 @@ blockquote {
 }
 
 .navbar {
-  padding: 1em 0em 0em 0em;
+  padding: 1em 0em 1em 0em;
 }
 
 nav a {
@@ -242,7 +198,7 @@ hr {
 }
 
 body {
-  background-color: #fffdf7;
+  background-color: #eee;
 }
 
 figcaption {
@@ -360,12 +316,6 @@ ul.right-links {
 ul.right-links li {
   display: inline-block;
   margin-right: 1em;
-}
-
-@media(min-width: 440px) {
-  ul.right-links {
-    display: block;
-  }
 }
 
 .embed.rich,
@@ -648,27 +598,4 @@ article table th {
 
 .sidepull-side {
   margin-bottom: 4em;
-}
-
-@media(min-width: 1170px) {
-  .sidepull-container {
-    position: relative;
-  }
-
-  .sidepull-container .sidepull-side {
-    /*
-      fallback will be absolute positioning if browser doesn't know about sticky
-      the `top` will result in maybe a little too much padding but it'll work still
-    */
-    position: absolute;
-    position: sticky;
-    width: 16em;
-    top: 3em;
-    margin-left: -18em /* width + a margin */;
-    float: left;
-  }
-
-  .sidepull-not-when-sidebar-shown {
-    display: none;
-  }
 }

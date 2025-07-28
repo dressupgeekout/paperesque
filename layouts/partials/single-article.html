@@ -1,6 +1,6 @@
 <article
     id="main"
-    class="content-container look-sheet article-pad-v {{ if (or .Params.disableMarginNotes .Site.Params.disableMarginNotes) }}no-floating-footnotes{{ end }}">
+    class="content-container article-pad-v {{ if (or .Params.disableMarginNotes .Site.Params.disableMarginNotes) }}no-floating-footnotes{{ end }}">
   <h1 id="title">{{ .Title }}</h1>
   {{ with .Params.tags }}
   <div class="post-tags">
