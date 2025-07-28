@@ -48,6 +48,8 @@ h1#title {
 }
 
 body {
+  width: 47em;
+  margin: auto;
   font-family: serif;
 }
 
@@ -135,48 +137,21 @@ blockquote {
   margin: 2em 0 2em 1em;
 }
 
-body.sticky-nav .navbar {
-  position: sticky;
-  z-index: 1000; /* theoretically this should be applied automatically but it doesn't work on Safari in some circumstances */
-  top: 0;
-}
-
-.nav-bkg {
-  color: white;
-  background: #00223E;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #00223E 80%, #FFA17F 80%);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(135deg, #00223E 80%, #FFA17F 80%);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.nav-bkg-50 {
-  color: white;
-  background: #00223E;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #00223E 50%, #FFA17F 50%);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(135deg, #00223E 50%, #FFA17F 50%);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .drop-shadow {
   box-shadow: 0 5px 5px -5px #777777;
 }
 
-.nav-bkg a {
+.navbar {
+  padding: 1em 0em 0em 0em;
+}
+
+nav a {
+  color: #444;
   text-decoration: underline;
 }
 
-.pagewide-bar-padding {
-  padding: 0.5em 1em;
-}
-
-nav a,
-nav a:hover,
-nav a:visited {
-  color: white;
+nav a:hover {
+  color: #000;
 }
 
 .post-date {

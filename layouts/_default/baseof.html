@@ -10,8 +10,8 @@
   <body
     class="{{ block "body-classes" . }}{{ end }}"
     lang="{{ .Site.LanguageCode }}">
-  <div class="navbar nav-bkg drop-shadow">
-    <nav class="content-container pagewide-bar-padding">
+  <div class="navbar">
+    <nav class="content-container">
       <span class="divider">/ </span>
       <a href="{{ .Site.Home.RelPermalink  }}" >{{ .Site.Title  }}</a>
       {{ block "breadcrumbs" . }}
